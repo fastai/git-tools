@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import os,requests,platform,json,subprocess
 import tarfile
 from zipfile import ZipFile
@@ -88,3 +90,5 @@ elif os_type=='windows':
 print(f"running: {cmd} (env={env})")
 my_env = {**os.environ, **env}
 subprocess.run(cmd.split(),shell=False, check=False, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=my_env)
+
+print("hub installed")
