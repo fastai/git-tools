@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+"""
+This script will install Hub tool based on the user's Operating system and H/W Type.
+usage:
+python hub-install.py
+"""
 
 import os,requests,platform,json,subprocess
 import tarfile
