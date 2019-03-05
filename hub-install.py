@@ -97,6 +97,6 @@ my_env = {**os.environ, **env}
 subprocess.run(cmd.split(),shell=False, check=False, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=my_env)
 # Clean up Downloaded Files
 os.remove('cache.json')
-shutil.rmtree(dest_dir)
+shutil.rmtree(loc)
 
 print("hub installed")
