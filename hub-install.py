@@ -5,7 +5,7 @@ usage:
 python hub-install.py
 """
 
-import os,requests,platform,json,subprocess
+import os,requests,platform,json,subprocess,shutil
 import tarfile
 from zipfile import ZipFile
 
@@ -95,5 +95,8 @@ elif os_type=='windows':
 print(f"running: {cmd} (env={env})")
 my_env = {**os.environ, **env}
 subprocess.run(cmd.split(),shell=False, check=False, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=my_env)
+# Clean up Downloaded Files
+os.remove('cache.json')
+shutil.rmtree(dest_dir)
 
 print("hub installed")
