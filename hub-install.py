@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-This program will install hub tool based on the users platform.
+This script will install Hub tool based on the user's Operating system and H/W Type.
 usage:
 python hub-install.py
 """
