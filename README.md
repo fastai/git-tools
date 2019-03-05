@@ -1,6 +1,7 @@
 # git-tools
 
-Tools that improve productivity for Git Users.
+Helper Scripts/Tools that improve productivity for Git Users.
+Docs associated with tools can be found [here](https://docs.fast.ai/dev/git.html)
 
 ## Index
 
